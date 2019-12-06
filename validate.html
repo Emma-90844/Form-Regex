@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>appointment</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="/css/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/js/bootstrap/boo">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/fontawesome/js/all.min.js">
+    <link rel="stylesheet" href="/css/custom/appointment.css">
+</head>
+
+   <!--  nav  bar starts here -->
+   <nav class="navbar navbar-expand-md navbar bg-info p-3 m-auto ">
+        <a href="/babyCenter.html" class="nav-bar-brand text-light" style="text-decoration: none; font-size: 30px;">&nbsp; &nbsp; &nbsp; 
+         <img src="/images/icons/homeicon.png" height="40px" alt=""> &nbsp; 
+         &nbsp;  Junior Baby Center 
+        </a>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+           
+        <button class="navbar-toggler"  data-toggle="collapse" data-target="menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <!-- Dash board link on the nav bar -->
+            <li class="nav-item">
+              <a href="#" class="nav-link bg-info btn-outline-light " style="border-radius:6px">
+                <i class="fas fa-users"></i> &nbsp; Users
+              </a> 
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  
+        <!-- catrgory link -->
+            <li class="nav-item">
+                <a href="#" class="nav-link bg-info btn-outline-light " style="border-radius:6px">
+                  <i class="fas fa-network-wired"></i> Catergory
+                </a>   
+              </li> 
+          </ul>
+  
+          <!-- log out section on the nav bar -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="/views/supervisor.html" class="nav-link bg-info btn-outline-light " style="border-radius:6px"> 
+                    <i class="fas fa-backspace"></i> &nbsp; &nbsp; &nbsp; &nbsp; Back
+                </a>                     
+            </li>
+
+
+            <li class="nav-item">
+              <a href="" class="nav-link bg-info btn-outline-light " style="border-radius:6px"> 
+                  <i class="fas fa-id_badge"></i>Tech Info
+              </a>
+                     <!--drop menu for profile and settings  -->
+              <div class="dropdown-menu">
+                <div class="nav-item">
+                  <div class="dropdown">
+                    <a href=""></a>
+                  </div>
+                </div>
+              </div>
+  
+            </li>
+  
+            <li class="nav-item">
+                <a href="/babyCenter.html" class="nav-link bg-info btn-outline-light " style="border-radius:6px"> 
+                    <i class="fas fa-sign-out-alt"></i>Logout
+                </a>       
+              </li>
+          </ul>
+        </div>
+  
+      </nav> 
+      <!--  nav bar ends here -->
+
+
+
+
+
+
+
+
+<!-- body starts here -->
+<body style="background-color: rgb(198, 210, 233);">
+
+    <!-- appointment  form starts here-->  
+    <h5 class="text-white mt-4"   style="margin-left: 38%; text-decoration: underline; color: rgb(44, 90, 92);" >APPOINTMENT FORM</h5>
+       
+    
+    
+    <form id="form-appointment-id" class="form-group mt-3" 
+        style="border: 1px solid rgb(192, 182, 182); font-size: 20px;width: 80%; color: rgb(219, 202, 202);margin: auto; padding-bottom: 100px;
+         background-color:  #263638; border-radius:7px ;" >
+            <!-- row for name -->
+                <div class="row mt-5">
+                    <div class="col-md-1 "></div>
+                    <!-- name  -->
+                   <div class="col-md-1 ">
+                       <label for="name">Parent(s) Name:</label>
+                   </div>
+                   
+                       <div class="col-md-4">
+                           <input type="text" name="name" class="form-control" id="name_id" onfocus>
+                           <div id="username-error" style="color:tomato;"></div>
+                       </div>
+                       <!-- Name of children input fields  -->
+                       <div class="col-md-1">
+                           <label for="child-name"> Name of Child(ren):</label>
+                       </div>
+                       <div class="col-md-4">
+                           <input type="text" class="form-control" name="child-name-name" id="child_name">
+                           <div id="childname-error" style="color: red;"></div>
+
+                       </div>
+                   
+                 </div>
+
+                    <!-- row for parents phone number -->
+                    <div class="row mt-0">
+                            <div class="col-md-1"></div>
+                        <div class="col-md-1">
+                            <label for="customer-id">Phone Number:</label>
+                        </div>
+                        <div class="col-md-4">
+                                <input type="text" name="id" id="phone_number" class="form-control ">
+                                <div id="phone_error" style="color: red;"></div>
+                        </div>
+                        <!-- email address  -->
+                        <div class="col-md-1">
+                            <label for="email">No. of Child(ren):</label>
+                        </div>
+                        <div class="col-md-4">
+                                <input type="text" id="child-number" class="form-control" name="">
+                                <div id="child_number_error" style="color: red;"></div>
+                        </div>
+                    </div>
+
+                    <!-- drop down for number of kids  -->
+                    <div class="row mt-3">
+                        <div class="col-md-1"></div>
+                        <!--Input field for the parents email address-->
+                        <div class="col-md-1">
+                            <label for="number-of-kids">Email Address</label>
+                        </div>
+                        <!-- Nput field for email -->
+                        <div class="col-md-4">
+                            <input type="text" name="" id="email" class="form-control">
+                            <div id="email_error" style="color: red;"></div>
+                        </div>
+                        
+                              <div class="col-md-1">
+                                  <!-- Input filed for the child or children age -->
+                                  <label for="name-of-kid">Child(ren) Age:</label>
+                              </div>
+                              <div class="col-md-4">
+                                  <input type="text" name="child-age" id="children_age" class="form-control">
+                                  <div id="children_error" style="color: red;"></div>
+                              </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-1"></div>
+                        <!-- Input filed for child (ren)age -->
+                        <div class="col-md-1">
+                            <label for="kids_age">Customer ID:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" name="customer" id="cutomer_id" class="form-control">
+                            <div id="customer_error" style="color: red;"></div>
+                        </div>
+
+
+                        <!-- Date of appointment selector -->
+                        <div class="col-md-1">
+                            <label for="date">Date of Appointment:</label>
+                        </div>
+                        <div class="col-md-4">
+                          <input type="date" name="date" class="form-control w-50" id="appointment_date">
+                          <div id="appointment_error" style="color: red;"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- choose club selector-->
+                    <div class="row mt-1">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-1">
+                            <label for="Club">Club</label>
+                        </div>
+
+                        <!-- A droplist for  club to be chosen -->
+                        <div class="col-md-4">
+                            <select class="w-50 form-control" id="select" > 
+                                <option value="choose" style="display: none;">...Choose club..</option>
+                                <option value="Morning Club">Morning Club</option>
+                                <option value="Day Club">Day Club</option>
+                                <option value="Evening Club">Evening Club</option>
+                                <option value="Night Club">Night Club</option>
+                            </select>
+                            <div id="select_error" style="color: red;"></div>
+
+
+                            <div class="row">
+                                <!--  Submit appointment form button-->
+                                <div class="col-md-6" style="margin-top: 90px;">
+                                    <input type="submit" class="form-control btn-dark" value="Submit" />
+                                </div>
+
+                                <div class="col-md-6" style="margin-top: 90px;">
+                                    <!-- Cancel appointment button-->
+                                    <a href="/views/supervisor.html"> <button type="button" class="form-control btn-danger">Cancel</button></a>                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                       <!-- Other info -->
+                        <div class="col-md-1">
+                            <label for="textarea">Any other information:</label>
+                        </div>
+                        <div class="col-md-4">
