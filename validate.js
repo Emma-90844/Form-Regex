@@ -56,8 +56,7 @@ appointmentForm.addEventListener("submit", e => {
     }
 
 
-  //email
-
+  //email validation
   const email = document.getElementById("email");
   const reEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+/;
   
@@ -69,9 +68,7 @@ appointmentForm.addEventListener("submit", e => {
     email.style.border = " 1px solid green";
   }
 
-
-
-//children 
+//child age validation
 const childrenAge = document.getElementById("children_age");
 const reChildrenAge  = /^[0-9\s]+$/;
 
@@ -85,8 +82,7 @@ else{
 }
 
 
-
-   //customer
+   //customer ID Validation
 
     const customer = document.getElementById("cutomer_id");
     const reCustomer = /^[0-9a-zA-Z\s]+$/;
@@ -101,7 +97,7 @@ else{
  
 
 
-// clubs
+// clubs select validation
 const clubSelect = document.getElementById('select');
 if(clubSelect.selectedIndex == ""){
     document.getElementById('select_error').innerHTML = "Please select a club";
@@ -116,15 +112,8 @@ const second = document.getElementById("two")
 
 if((first.checked == ' ') && (second.checked == '' )){
 document.getElementById('gender') = 'required'
-
-
 }else{
 document.getElementById('gender').innerHtml == ''
 }
-
-
-
-
-
 
 })
